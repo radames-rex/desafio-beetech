@@ -1,0 +1,39 @@
+{
+  "name": "beeApp",
+  "homepage": "",
+  "authors": [
+    "radames-rex <radames.rex@gmail.com>"
+  ],
+  "description": "Desafio BeeTech",
+  "main": "index.html",
+  "keywords": [
+    "cotação",
+    "dinheiro",
+    "moeda"
+  ],
+  "license": "None",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.4.0",
+    "angular-ui-router": "^0.3.2",
+    "angular-translate": "^2.13.1",
+    "angular-translate-loader-static-files": "^2.13.1",
+    "jquery": "^3.2.1",
+    "font-awesome": "^4.7.0"
+  },
+  "overrides": {
+    "font-awesome": {
+      "main": [
+        "css/font-awesome.css"
+      ]
+    }
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,32 @@
+{
+  "main": {
+    "spotlights": "Destaques",
+    "categories": "Categorias",
+    "error": {
+      "request": "Tente Novamente!"
+    }
+  },
+  "spotlights": {
+    "tournament": "Torneio",
+    "only": "por apenas",
+    "$": "R$"
+  },
+  "login": {
+    "email": "Email",
+    "password": "Senha",
+    "placeholder": {
+      "email": "Digite seu email...",
+      "password": "Digite sua senha..."
+    },
+    "or": "ou",
+    "enter": "Entrar",
+    "signin": "Criar conta no Bora",
+    "facebook": "Login com o Facebook"
+  },
+  "footer": {
+    "copy": "Bora! © 2017. Todos os direitos reservados.",
+    "terms": "Termos de Uso.",
+    "politics": "Políticas de Privacidade.",
+    "sitemap": "Sitemap."
+  }
+}

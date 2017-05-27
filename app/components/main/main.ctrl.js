@@ -2,11 +2,11 @@
 
 (function() {
 
-  var MainCtrl = function($scope) {
+  var MainCtrl = function($scope, $log) {
     console.log("Plus Ultra!");
   };
 
-  MainCtrl.$inject = ['$scope'];
+  MainCtrl.$inject = ['$scope', '$log'];
 
   angular
     .module('beeApp')

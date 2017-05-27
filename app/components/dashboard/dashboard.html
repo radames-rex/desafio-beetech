@@ -1,3 +1,17 @@
-<section class="content">
-
+<section class="quotations">
+  <div class="quotations__item" ng-repeat="q in ctrl.quotations.result">
+    <h3>{{ q.currencyObj.name }}</h3>
+    <div class="item__conversion">
+      <img src="images/brazil-flag.jpg" alt="quantity">
+      <label for="quantity">Quantidade</label>
+      <input type="text" name="quantity" value="{{ q.currencyObj.quantity }}">
+      <img src="{{ q.currencyObj.full_flag_image }}" alt="total value">
+      <label for="total_value">Valor</label>
+      <input type="text" name="total_value" value="{{ q.currencyObj.total_value }}">
+    </div>
+    <div class="item__info">
+      <span>Site que regulamentariza a moeda:</span> <span>{{ q.currencyObj.website }}</span>
+    </div>
+    {{ q.currencyObj.abbreviation }}
+  </div>
 </section>

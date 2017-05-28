@@ -17,9 +17,17 @@ Para rodar o servidor
 
 `gulp`
 
+Gera a documentação
+
+`gulp jsdoc`
+
 Para gerar o build para produção
 
 `gulp build`
+
+Para rodar os testes de qualidade de código
+
+`gulp lint`
 
 Para rodar os testes unitários
 

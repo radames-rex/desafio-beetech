@@ -1,5 +1,10 @@
 'use strict';
 
+/**
+ * Configuração geral.
+ * @function app
+ * @author Rádames Rex
+ */
 angular
   .module('beeApp', [
     'ui.router',

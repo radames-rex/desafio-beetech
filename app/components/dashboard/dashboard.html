@@ -1,22 +1,25 @@
 <div class="dashboard">
   <section class="quotations">
     <h3>Cotações Atuais</h3>
-    <div class="quotations__item" ng-repeat="q in ctrl.quotations.result track by $index">
-      <div class="item__conversion">
-        <img src="{{ q.currencyObj.full_flag_image }}" alt="total value">
-        <div class="item__conversion--input">
-          <input type="text" name="total_value" placeholder="{{ q.currencyObj.acronym }} {{ ctrl.b[$index] == null ? q.quantity : ctrl.calculo(q.quantity,q.total_value,ctrl.b[$index]) }}" ng-model="ctrl.a[$index]">
-          <label for="total_value">{{ q.currencyObj.name }} [{{ q.currencyObj.abbreviation }}]</label>
+    <img id="loading" src="images/loading.gif" alt="loading...">
+    <div id="quotations" class="is-inactive">
+      <div class="quotations__item" ng-repeat="q in ctrl.quotations.result track by $index">
+        <div class="item__conversion">
+          <img src="{{ q.currencyObj.full_flag_image }}" alt="total value">
+          <div class="item__conversion--input">
+            <input ng-focus="ctrl.focusIn()" type="text" name="total_value" placeholder="{{ q.currencyObj.acronym }} {{ ctrl.b[$index] == null ? q.quantity : ctrl.calculo(q.quantity,q.total_value,ctrl.b[$index]) }}" ng-model="ctrl.a[$index]">
+            <label for="total_value">{{ q.currencyObj.name }} [{{ q.currencyObj.abbreviation }}]</label>
+          </div>
+          <i class="fa fa-exchange" aria-hidden="true"></i>
+          <img src="images/brazil-flag.png" alt="quantity">
+          <div class="item__conversion--input">
+            <input ng-focus="ctrl.focusIn()" type="text" name="quantity" placeholder="R$ {{ ctrl.a[$index] == null ? q.total_value : ctrl.calculo(q.total_value,q.quantity,ctrl.a[$index]) }}" ng-model="ctrl.b[$index]">
+            <label for="quantity">Real [BRL]</label>
+          </div>
         </div>
-        <i class="fa fa-exchange" aria-hidden="true"></i>
-        <img src="images/brazil-flag.png" alt="quantity">
-        <div class="item__conversion--input">
-          <input type="text" name="quantity" placeholder="R$ {{ ctrl.a[$index] == null ? q.total_value : ctrl.calculo(q.total_value,q.quantity,ctrl.a[$index]) }}" ng-model="ctrl.b[$index]">
-          <label for="quantity">Real [BRL]</label>
+        <div class="item__info">
+          <span>Site que regulamentariza a moeda:</span> <a href="{{ q.currencyObj.website }}">Clique aqui!</a></span>
         </div>
-      </div>
-      <div class="item__info">
-        <span>Site que regulamentariza a moeda:</span> <a href="{{ q.currencyObj.website }}">Clique aqui!</a></span>
       </div>
     </div>
   </section>

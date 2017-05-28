@@ -7,11 +7,6 @@
       var defer = $q.defer();
       RequestService.get(REQUEST.api.quotations).then(function(data) {
         var data = data.data
-        if (typeof data === 'object') {
-          defer.resolve(data);
-        } else {
-          defer.reject("hasnt object");
-        }
         defer.resolve(data);
       }, function(response) {
         $log.warn(response.status + " " + response.statusText);

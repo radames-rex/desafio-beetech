@@ -30,7 +30,7 @@ table {
 
 /* LAYOUT */
 body {
-  background-color: #f3f3f3;
+  background-color: #fff;
   color: #333355;
   font-family: 'Montserrat', sans-serif; }
 
@@ -161,6 +161,10 @@ footer {
   margin: 24px 0 0; }
   .item__info a {
     opacity: 0.9; }
+
+/* STATE */
+.is-inactive {
+  display: none; }
 
 /* MODULE */
 .newsletter {

@@ -1,11 +1,11 @@
 /* LAYOUT */
 header {
 	width: auto;
-	height: 18vh;
+	height: 12vh;
 	display: flex;
 	flex-direction: column;
-	padding: 24px 0;
-	font-size: 42px;
+	padding: 16px 0;
+	font-size: 28px;
 	color: #333355;
 	align-items: center;
 	background: -moz-linear-gradient(top, rgba(246,137,31,1) 0%, rgba(255,255,255,0) 100%);
@@ -13,6 +13,6 @@ header {
 	background: linear-gradient(to bottom, rgba(246,137,31,1) 0%,rgba(255,255,255,0) 100%);
 
 	img {
-		height: 128px;
+		height: 90px;
 	}
 }

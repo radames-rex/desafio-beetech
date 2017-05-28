@@ -1,19 +1,26 @@
 /* MODULE */
+.dashboard {
+	display: table;
+	margin: 7vh auto;
+}
+
 .quotations {
 	display: table;
 	text-align: center;
-	margin: 7vh auto;
 
 	&__item {
 		display: flex;
 		flex-direction: column;
 		margin: 12px;
-		padding: 24px 24px 12px;
+		padding: 18px 18px 8px;
 		box-shadow: 0 0px 50px rgba(197, 197, 197, 0.5);
 	}
 
 	h3 {
-		font-size: 14px;
+		font-size: 13px;
+    text-transform: uppercase;
+    color: #47425b;
+    padding: 0 0 4px 0;
 	}
 }
 

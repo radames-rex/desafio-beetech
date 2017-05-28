@@ -1,20 +1,30 @@
-<section class="quotations">
-  <h3>Cotações Atuais</h3>
-  <div class="quotations__item" ng-repeat="q in ctrl.quotations.result">
-    <div class="item__conversion">
-      <img src="{{ q.currencyObj.full_flag_image }}" alt="total value">
-      <div class="item__conversion--input">
-        <input type="text" name="total_value" placeholder="{{ q.currencyObj.acronym }} {{ q.quantity }}">
-        <label for="total_value">{{ q.currencyObj.name }} [{{ q.currencyObj.abbreviation }}]</label>
+<div class="dashboard">
+  <section class="quotations">
+    <h3>Cotações Atuais</h3>
+    <div class="quotations__item" ng-repeat="q in ctrl.quotations.result">
+      <div class="item__conversion">
+        <img src="{{ q.currencyObj.full_flag_image }}" alt="total value">
+        <div class="item__conversion--input">
+          <input type="text" name="total_value" placeholder="{{ q.currencyObj.acronym }} {{ q.quantity }}">
+          <label for="total_value">{{ q.currencyObj.name }} [{{ q.currencyObj.abbreviation }}]</label>
+        </div>
+        <img src="images/brazil-flag.png" alt="quantity">
+        <div class="item__conversion--input">
+          <input type="text" name="quantity" placeholder="R$ {{ q.total_value }}">
+          <label for="quantity">Real [BRL]</label>
+        </div>
       </div>
-      <img src="images/brazil-flag.png" alt="quantity">
-      <div class="item__conversion--input">
-        <input type="text" name="quantity" placeholder="R$ {{ q.total_value }}">
-        <label for="quantity">Real [BRL]</label>
+      <div class="item__info">
+        <span>Site que regulamentariza a moeda:</span> <a href="{{ q.currencyObj.website }}">Clique aqui!</a></span>
       </div>
     </div>
-    <div class="item__info">
-      <span>Site que regulamentariza a moeda:</span> <a href="{{ q.currencyObj.website }}">Clique aqui!</a></span>
+  </section>
+
+  <newsletter>
+    <div class="newsletter">
+      <h3>Receba as cotações em seu e-mail!</h3>
+      <input type="text" name="" placeholder="Seu e-mail...">
+      <button type="button" name="button"><i class="fa fa-envelope-o"></i> <span>enviar</span></button>
     </div>
-  </div>
-</section>
+  </newsletter>
+</div>

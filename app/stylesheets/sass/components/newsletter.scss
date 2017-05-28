@@ -1,1 +1,22 @@
 /* MODULE */
+.newsletter {
+  margin: 2vh 12px;
+  padding: 6px 0 2px 0;
+  text-align: center;
+  box-shadow: 0 0 4px #ff5c00;
+
+  h3 {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  button {
+    color: #fff;
+    background-color: #333355;
+
+    span {
+      vertical-align: baseline;
+      text-transform: uppercase;
+    }
+  }
+}

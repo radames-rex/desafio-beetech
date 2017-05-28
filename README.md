@@ -6,6 +6,7 @@ Desafio Front-End BeeTech
 
 Para instalar as dependências de desenvolvimento
 
+`sudo npm install -g gulp-cli karma-cli`
 `npm install`
 
 Para instalar as dependências
@@ -22,8 +23,4 @@ Para gerar o build para produção
 
 Para rodar os testes unitários
 
-`gulp unit-test`
-
-Para rodar os testes e2e
-
-`gulp e2e-test`
+`karma start`

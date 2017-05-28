@@ -2,13 +2,17 @@
 
 (function() {
 
-  var NewsletterDrtv = function($scope, $log) {
-
+  var newsletter = function($log) {
+    return {
+      restrict: 'E',
+      templateUrl: 'components/newsletter/newsletter.html',
+      controller: 'NewsletterCtrl as ctrl'
+    };
   };
 
-  NewsletterDrtv.$inject = ['$scope', '$log'];
+  newsletter.$inject = ['$log'];
 
   angular
     .module('beeApp')
-    .directive('NewsletterDrtv', NewsletterDrtv);
+    .directive('newsletter', newsletter);
 })();

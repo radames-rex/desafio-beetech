@@ -1,10 +1,8 @@
-<section class="newsletter">
-  <div class="front">
-    <span>Receba as cotações em seu e-mail!</span>
-  </div>
-  <div class="back">
-    <label for="">{{'login.email' | translate}}</label>
-    <input type="text" name="ctrl.email" ng-model="ctrl.email" placeholder="{{'login.placeholder.email' | translate}}">
-    <button type="button" class="button-enter" ng-click="ctrl.login()">{{'login.enter' | translate}}</button>
-  </div>
-</section>
+<div class="msg">
+  Registro realizado com Sucesso!
+</div>
+<div class="newsletter">
+  <h3>Receba as cotações em seu e-mail</h3>
+  <input type="text" ng-model="ctrl.email" placeholder="Seu e-mail...">
+  <button type="button" name="button" ng-click="ctrl.register()"><i class="fa fa-envelope-o"></i> <span>enviar</span></button>
+</div>

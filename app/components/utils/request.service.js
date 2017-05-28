@@ -32,7 +32,7 @@
     };
 
     // POST
-    this.postFull = function(url, body) {
+    this.postFull = function(url, body, auth) {
       if (isOnline()) {
         return $http({
           url: url,
@@ -40,7 +40,8 @@
           method: 'POST',
           data: body,
           headers: {
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
+            "Authorization": auth
           }
         });
       }

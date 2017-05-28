@@ -14,6 +14,7 @@
           content = $('#quotations');
         load.addClass('is-inactive');
         content.removeClass('is-inactive');
+        console.log('ok');
       });
     }
 

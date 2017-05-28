@@ -14,7 +14,8 @@ angular
     api: {
       quotations: 'http://demo3643409.mockable.io/quotations',
       newsletter: 'http://demo3643409.mockable.io/newsletter '
-    }
+    },
+    auth: 'desafiobeetech'
   })
   .config(function($stateProvider, $urlRouterProvider, $translateProvider, PATH) {
 
@@ -35,10 +36,6 @@ angular
       url: PATH.dashboard,
       templateUrl: 'components/dashboard/dashboard.html',
       controller: 'DashboardCtrl as ctrl'
-    }).state('bee.newsletter', {
-      url: PATH.newsletter,
-      templateUrl: 'components/newsletter/newsletter.html',
-      controller: 'NewsletterCtrl as ctrl'
     });
 
     // Redirecionamento para evitar 404

@@ -18,7 +18,7 @@ angular
   .constant('REQUEST', {
     api: {
       quotations: 'http://demo3643409.mockable.io/quotations',
-      newsletter: 'http://demo3643409.mockable.io/newsletter '
+      newsletter: 'http://demo3643409.mockable.io/newsletter'
     },
     auth: 'desafiobeetech'
   })

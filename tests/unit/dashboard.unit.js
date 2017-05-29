@@ -84,12 +84,17 @@ describe('DashboardCtrl ->', function() {
     $httpBackend.verifyNoOutstandingRequest();
   });
 
-  it('DashboardCtrl deve estar definido', function() {
+  it('deve estar definido', function() {
     expect(scope).toBeDefined();
     $httpBackend.flush();
   });
 
-  it('Should have title', function() {
+  it('deve atualizar quotations', function() {
+    expect(controller.quotations).toBe('');
+    $httpBackend.flush();
+  });
+
+  it('deve calcular novas cotações solicitadas pelo usuário', function() {
     expect(controller.quotations).toBe('');
     $httpBackend.flush();
   });

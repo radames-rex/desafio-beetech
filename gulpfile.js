@@ -53,15 +53,10 @@ gulp.task('watch', function() {
 // Gera um build para deploy no servidor
 gulp.task('build', function() {
   return gulp.src([
-      'app/components',
-      'app/fonts',
-      'app/images',
-      'app/stylesheets/app.css',
-      'app/translate',
-      'app/404.html',
-      'app/index.html',
-      'app/robots.txt',
-      'app/libs'
+      'app/**',
+      '!app/.temp/',
+      '!app/stylesheets/sass',
+      '!app/**/DS.Store'
     ])
     .pipe(gulp.dest('dist/'));
 });

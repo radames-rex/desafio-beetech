@@ -35,5 +35,7 @@
       ]
     }
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "angular-mocks": "1.4.0"
+  }
 }

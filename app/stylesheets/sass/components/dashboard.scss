@@ -54,6 +54,25 @@
 	}
 }
 
+.row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+@media only screen and (max-width: 40em) {
+	.item {
+		&__conversion {
+			flex-direction: column;
+
+			img {
+				height: 24px;
+				width: 41px;
+			}
+		}
+	}
+}
+
 /* STATE */
 .is-inactive {
 	display: none;

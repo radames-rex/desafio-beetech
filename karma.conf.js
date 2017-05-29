@@ -1,6 +1,8 @@
 // Karma configuration
 
 module.exports = function(config) {
+  'use strict';
+
   config.set({
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
@@ -14,6 +16,14 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+      'app/libs/angular/angular.js',
+      'app/libs/angular-ui-router/release/angular-ui-router.js',
+      'app/libs/angular-translate/angular-translate.js',
+      'app/libs/angular-translate-loader-static-files/angular-translate-loader-static-files.js',
+      'app/libs/jquery/dist/jquery.js',
+      'app/libs/angular-mocks/angular-mocks.js',
+      'app/components/**/*.js',
+      'app/components/**/*.html',
       'tests/unit/*.js'
     ],
 
@@ -52,8 +62,13 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome'],
+    browsers: ['PhantomJS'],
 
+    // Which plugins to enable
+    plugins: [
+      'karma-phantomjs-launcher',
+      'karma-jasmine'
+    ],
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits

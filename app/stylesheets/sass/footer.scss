@@ -18,3 +18,10 @@ footer {
     color: #D9091C;
   }
 }
+
+@media only screen and (max-width: 40em) {
+  footer {
+    position: relative;
+    margin: 12px 0 0 0;
+  }
+}

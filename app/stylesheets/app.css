@@ -124,6 +124,11 @@ footer {
   footer a:visited {
     color: #D9091C; }
 
+@media only screen and (max-width: 40em) {
+  footer {
+    position: relative;
+    margin: 12px 0 0 0; } }
+
 /* MODULE */
 .dashboard {
   display: table;
@@ -162,6 +167,18 @@ footer {
   .item__info a {
     opacity: 0.9; }
 
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+@media only screen and (max-width: 40em) {
+  .item__conversion {
+    flex-direction: column; }
+    .item__conversion img {
+      height: 24px;
+      width: 41px; } }
+
 /* STATE */
 .is-inactive {
   display: none; }
@@ -198,3 +215,14 @@ footer {
   color: #ff8003;
   background-color: rgba(255, 255, 255, 0.7);
   z-index: 999; }
+
+@media only screen and (max-width: 40em) {
+  .newsletter {
+    margin: 0 auto;
+    padding: 18px 0px 7px;
+    display: flex;
+    flex-direction: column;
+    width: 290px; }
+    .newsletter input, .newsletter button {
+      width: 80%;
+      margin: 12px auto 6px; } }

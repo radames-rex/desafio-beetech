@@ -24,7 +24,7 @@
      * @author Rádames Rex
      * @param ctrl DashboardCtrl
      */
-    var init = function(ctrl) {
+    ctrl.init = function(ctrl) {
       DashboardService.getQuotations().then(function(data) {
         ctrl.quotations = data;
         // Remove o loading e exibe os dados
@@ -55,15 +55,15 @@
     ctrl.focusIn = function() {
       ctrl.a = null;
       ctrl.b = null;
-      init(ctrl);
+      ctrl.init(ctrl);
     };
 
     // Inicializa a aplicação
-    init(ctrl);
+    ctrl.init(ctrl);
 
     // De 10 em 10 segundos atualiza os dados
     $interval(function() {
-      init(ctrl);
+      ctrl.init(ctrl);
     }, 10000);
 
   };

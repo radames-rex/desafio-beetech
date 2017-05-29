@@ -40,7 +40,11 @@
      */
     this.calculo = function(factor, div, value) {
       var result = factor / div * value;
-      return parseFloat(result.toFixed(2));
+      if (!isNaN(result)) {
+        return parseFloat(result.toFixed(2));
+      } else {
+        return "Letras Não!"
+      }
     };
   };
 

@@ -177,7 +177,10 @@ footer {
     flex-direction: column; }
     .item__conversion img {
       height: 24px;
-      width: 41px; } }
+      width: 41px; }
+    .item__conversion i {
+      transform: rotate(90deg);
+      margin: 12px; } }
 
 /* STATE */
 .is-inactive {
@@ -201,6 +204,8 @@ footer {
     .newsletter button span {
       vertical-align: baseline;
       text-transform: uppercase; }
+    .newsletter button:disabled {
+      opacity: 0.5; }
 
 .msg {
   position: absolute;

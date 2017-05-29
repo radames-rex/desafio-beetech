@@ -3,7 +3,9 @@
 </div>
 <div class="newsletter">
   <h3>{{ 'newsletter.call' | translate}}</h3>
-  <input type="text" ng-model="ctrl.name" placeholder="{{ 'newsletter.placeholder.name' | translate}}">
-  <input type="text" ng-model="ctrl.email" placeholder="{{ 'newsletter.placeholder.email' | translate}}">
-  <button type="button" name="button" ng-click="ctrl.register()"><i class="fa fa-envelope-o"></i> <span>{{ 'newsletter.enter' | translate}}</span></button>
+  <form name="form">
+    <input type="text" ng-model="ctrl.name" placeholder="{{ 'newsletter.placeholder.name' | translate}}" ng-required="true">
+    <input type="text" ng-model="ctrl.email" placeholder="{{ 'newsletter.placeholder.email' | translate}}" ng-required="true">
+    <button type="button" name="button" ng-click="ctrl.register()" ng-disabled="form.$invalid"><i class="fa fa-envelope-o"></i> <span>{{ 'newsletter.enter' | translate}}</span></button>
+  </form>
 </div>

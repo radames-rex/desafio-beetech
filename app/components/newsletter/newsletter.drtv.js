@@ -2,6 +2,12 @@
 
 (function() {
 
+  /**
+   * Diretiva customizada newsletter.
+   * @function newsletter
+   * @author Rádames Rex
+   * @param $log Log
+   */
   var newsletter = function($log) {
     return {
       restrict: 'E',

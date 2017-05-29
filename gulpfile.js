@@ -21,12 +21,12 @@ gulp.task('lint', function() {
 });
 
 // Gera documentação usando as marcações com js-doc3
-gulp.task('jsdoc', function(cb) {
+gulp.task('jsdoc', function() {
   return gulp.src([
       'app/components/**/*.js',
       'README.md'
     ])
-    .pipe(jsdoc(cb));
+    .pipe(jsdoc());
 });
 
 // Compila Sass para Css

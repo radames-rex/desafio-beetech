@@ -2,12 +2,28 @@
 
 (function() {
 
+  /**
+   * Controller da diretiva newsletter.
+   * @function NewsletterCtrl
+   * @author Rádames Rex
+   * @param $scope Escopo do controller
+   * @param $log Log
+   * @param NewsletterService Service para separar regras do controller
+   * @param $timeout Realiza operações com delay
+   */
   var NewsletterCtrl = function($scope, $log, NewsletterService, $timeout) {
 
+    // Facilita o uso do this referente ao controller
     var ctrl = this;
 
+    /**
+     * Função disponível para view que permite o registro do usuário em um newsletter.
+     * @function register
+     * @author Rádames Rex
+     */
     ctrl.register = function() {
-      NewsletterService.registerNewsletter(ctrl.email).then(function(data) {
+      NewsletterService.registerNewsletter(ctrl.name, ctrl.email).then(function(data) {
+        // Cria uma mensagem de sucesso com blur no fundo
         var newsletter = $('.newsletter'),
           msg = $('.msg');
         newsletter.css('filter', 'blur(4px)');

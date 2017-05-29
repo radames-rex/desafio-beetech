@@ -1,0 +1,25 @@
+{
+  "main": {
+    "header": "Challenge",
+    "error": {
+      "request": "Try Again!"
+    }
+  },
+  "dashboard": {
+    "title": "Current Quotations",
+    "site": "Website that regulates the currency:",
+    "click": "Click here!"
+  },
+  "newsletter": {
+    "msg": "Successful Registration!",
+    "call": "Get quotes in your email",
+    "placeholder": {
+      "name": "Your name ...",
+      "email": "Your e-mail ..."
+    },
+    "enter": "Send"
+  },
+  "footer": {
+    "copy": "2017 © Desafio BeeTech. By Rádames Santiago."
+  }
+}

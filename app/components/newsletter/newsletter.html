@@ -1,8 +1,9 @@
 <div class="msg">
-  Registro realizado com Sucesso!
+  {{ 'newsletter.msg' | translate}}
 </div>
 <div class="newsletter">
-  <h3>Receba as cotações em seu e-mail</h3>
-  <input type="text" ng-model="ctrl.email" placeholder="Seu e-mail...">
-  <button type="button" name="button" ng-click="ctrl.register()"><i class="fa fa-envelope-o"></i> <span>enviar</span></button>
+  <h3>{{ 'newsletter.call' | translate}}</h3>
+  <input type="text" ng-model="ctrl.name" placeholder="{{ 'newsletter.placeholder.name' | translate}}">
+  <input type="text" ng-model="ctrl.email" placeholder="{{ 'newsletter.placeholder.email' | translate}}">
+  <button type="button" name="button" ng-click="ctrl.register()"><i class="fa fa-envelope-o"></i> <span>{{ 'newsletter.enter' | translate}}</span></button>
 </div>

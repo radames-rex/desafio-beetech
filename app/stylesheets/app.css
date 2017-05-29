@@ -176,6 +176,8 @@ footer {
   .newsletter h3 {
     font-size: 12px;
     text-transform: uppercase; }
+  .newsletter input {
+    margin: 0 4px 8px; }
   .newsletter button {
     color: #fff;
     background-color: #333355; }

@@ -1,6 +1,6 @@
 <div class="dashboard">
   <section class="quotations">
-    <h3>Cotações Atuais</h3>
+    <h3>{{ 'dashboard.title' | translate}}</h3>
     <img id="loading" src="images/loading.gif" alt="loading...">
     <div id="quotations" class="is-inactive">
       <div class="quotations__item" ng-repeat="q in ctrl.quotations.result track by $index">
@@ -18,7 +18,7 @@
           </div>
         </div>
         <div class="item__info">
-          <span>Site que regulamentariza a moeda:</span> <a href="{{ q.currencyObj.website }}">Clique aqui!</a></span>
+          <span>{{ 'dashboard.site' | translate}}</span> <a href="{{ q.currencyObj.website }}">{{ 'dashboard.click' | translate}}</a></span>
         </div>
       </div>
     </div>

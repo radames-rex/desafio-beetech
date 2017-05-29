@@ -47,7 +47,7 @@ gulp.task('sass', function() {
 // Observa mudanças para fazer reload
 gulp.task('watch', function() {
   gulp.watch('app/stylesheets/sass/**/*.scss', ['sass']);
-  gulp.watch('components/**/*.js', ['lint'])
+  gulp.watch('app/components/**/*.js', ['lint'])
 });
 
 // Gera um build para deploy no servidor

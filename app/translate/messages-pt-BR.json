@@ -1,32 +1,25 @@
 {
   "main": {
-    "spotlights": "Destaques",
-    "categories": "Categorias",
+    "header": "Desafio",
     "error": {
       "request": "Tente Novamente!"
     }
   },
-  "spotlights": {
-    "tournament": "Torneio",
-    "only": "por apenas",
-    "$": "R$"
+  "dashboard": {
+    "title": "Cotações Atuais",
+    "site": "Site que regulamentariza a moeda:",
+    "click": "Clique aqui!"
   },
-  "login": {
-    "email": "Email",
-    "password": "Senha",
+  "newsletter": {
+    "msg": "Registro realizado com Sucesso!",
+    "call": "Receba as cotações em seu e-mail",
     "placeholder": {
-      "email": "Digite seu email...",
-      "password": "Digite sua senha..."
+      "name": "Seu nome ...",
+      "email": "Seu e-mail ..."
     },
-    "or": "ou",
-    "enter": "Entrar",
-    "signin": "Criar conta no Bora",
-    "facebook": "Login com o Facebook"
+    "enter": "enviar"
   },
   "footer": {
-    "copy": "Bora! © 2017. Todos os direitos reservados.",
-    "terms": "Termos de Uso.",
-    "politics": "Políticas de Privacidade.",
-    "sitemap": "Sitemap."
+    "copy": "2017 © Desafio BeeTech. Por Rádames Santiago."
   }
 }
